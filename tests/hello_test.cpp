@@ -8,3 +8,7 @@
 TEST_CASE( "it returns Hello World" ) {
     REQUIRE( hello() == "Hello World!" );
 }
+
+TEST_CASE( "it returns 12 characters" ) {
+    REQUIRE( std::size(hello()) == 12 );
+}
